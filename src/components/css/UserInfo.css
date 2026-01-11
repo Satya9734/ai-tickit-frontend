@@ -1,0 +1,115 @@
+/* ===== USER CARD ===== */
+.user-info-card {
+  border: 1px solid #444;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+/* ===== ROWS ===== */
+.user-row {
+  font-size: 0.95rem;
+}
+
+/* ===== SKILLS ===== */
+.user-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.skills-text {
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+.na-text {
+  color: #888;
+}
+
+/* ===== BUTTONS ===== */
+.edit-btn {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background: #fff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.edit-btn:hover {
+  background: #ddd;
+}
+
+/* ===== EDIT FORM ===== */
+.edit-form {
+  margin-top: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.edit-input {
+  padding: 0.5rem;
+  background: #000;
+  border: 1px solid #555;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.edit-input:focus {
+  outline: none;
+  border-color: #fff;
+}
+
+/* ===== FORM ACTIONS ===== */
+.edit-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.submit-btn {
+  flex: 1;
+  padding: 0.5rem;
+  background: #fff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.submit-btn:hover {
+  background: #ddd;
+}
+
+.cancel-btn {
+  flex: 1;
+  padding: 0.5rem;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #555;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.cancel-btn:hover {
+  border-color: #fff;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .user-info-card {
+    padding: 0.8rem;
+  }
+
+  .user-row {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,71 @@
+/* ===== TICKET CARD ===== */
+.ticket-card {
+  border: 1px solid #444;
+  background: #000;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  transition: 0.2s;
+}
+
+.ticket-card:hover {
+  border-color: #fff;
+}
+
+/* ===== ROWS ===== */
+.ticket-row {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* ===== BUTTONS ===== */
+.view-btn {
+  padding: 0.5rem;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.view-btn:hover {
+  border-color: #fff;
+}
+
+.solve-btn {
+  padding: 0.5rem;
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.solve-btn:hover {
+  background: #ddd;
+}
+
+/* ===== SOLVED ===== */
+.solved-text {
+  text-align: center;
+  padding: 0.4rem;
+  font-weight: bold;
+  color: #0f0;
+  border: 1px solid #0f0;
+  border-radius: 4px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .ticket-card {
+    padding: 0.8rem;
+  }
+
+  .ticket-row {
+    font-size: 0.9rem;
+  }
+}

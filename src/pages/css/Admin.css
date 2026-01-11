@@ -1,0 +1,66 @@
+/* ===== ADMIN CONTAINER ===== */
+.admin-container {
+  min-height: 100vh;
+  padding: 1rem;
+  background: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ===== HEADER ===== */
+.admin-header {
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.5rem;
+}
+
+.admin-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* ===== LOADING ===== */
+.admin-loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.1rem;
+}
+
+/* ===== USER LIST ===== */
+.admin-user-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+/* ===== EMPTY STATE ===== */
+.no-user-text {
+  text-align: center;
+  padding: 2rem;
+  color: #888;
+}
+
+/* ===== USER CARD (for UsersInfo root div) ===== */
+.user-card {
+  border: 1px solid #444;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #000;
+  transition: 0.2s;
+}
+
+.user-card:hover {
+  border-color: #fff;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .admin-title {
+    font-size: 1.2rem;
+  }
+
+  .admin-container {
+    padding: 0.8rem;
+  }
+}
