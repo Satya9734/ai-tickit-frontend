@@ -56,7 +56,7 @@ function EachTickit({ tickit }) {
       </button>
 
       {
-        user._id == tickit.createdBy._id && tickit.status != "PROBLEM SOLVED"
+       ( user._id == tickit.createdBy._id) && tickit.status != "PROBLEM SOLVED"
           ?
           <button
             className="solve-btn"
@@ -65,7 +65,7 @@ function EachTickit({ tickit }) {
             {loding ? "Updating..." : "Mark as Solved"}
           </button>
           :
-          <div className="solved-text">SOLVED</div>
+          ( user._id == tickit.createdBy._id) && <div className="solved-text">SOLVED</div>
       }
     </div>
   )
